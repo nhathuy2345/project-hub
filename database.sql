@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS kho_do_an
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE kho_do_an;
+
+CREATE TABLE IF NOT EXISTS contacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+
+    full_name VARCHAR(120) NOT NULL,
+
+    phone VARCHAR(20) NOT NULL,
+
+    major VARCHAR(100) NOT NULL,
+
+    message TEXT NOT NULL,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
